@@ -14,7 +14,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
-
+    <style type="text/css">
+    .well {
+        background-color:#CCC;
+        padding: 20px;
+      }
+    </style>
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,7 +30,6 @@
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -44,19 +48,111 @@
             <li><a href="file://mac/Home/Documents/MyWebSites/demo/about.html">About</a></li>
             <li><a href="file://mac/Home/Documents/MyWebSites/demo/photo.html">Photo</a></li>
             <li><a href="file://mac/Home/Documents/MyWebSites/demo/contact.html">Contact</a></li>
+            <li><a href="file://mac/Home/Documents/MyWebSites/demo/formulaire.html">Formulaire</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
     <div class="container">
+	     <div class="starter-template">
+	       <h2>Bootstrap starter template</h2>
+	       <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+	     </div>
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+	        <section class="col-sm-8 table-responsive">
+				<table class="table table-bordered table-striped table-condensed">
+					<caption>
+					<h4>Lorem ipsum dolor sit amet</h4>
+					</caption>
+					<thead>
+						<tr>
+							<th>Lieu</th>
+							<th>Texte</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>France</td>
+							<td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</td>
+						</tr>
+						<tr>
+							<td>Indonésie</td>
+							<td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</td>
+						</tr>
+						<tr class="danger">
+							<td>Malaisie</td>
+							<td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</td>
+						</tr>
+						<tr>
+							<td>États-Unis</td>
+							<td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..
+							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..
+							</td>
+						</tr>
+						<tr>
+							<td>Europe</td>
+							<td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</td>
+						</tr>
+						<tr>
+							<td>Népal</td>
+							<td>consectetur, adipisci velit..</td>
+						</tr>
+					</tbody>
+				</table>
+				
+           
+                <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-user"></span><br>Utilisateurs</button>
+                <button class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-comment"></span><br>Commentaires</button>
+                <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-calendar"></span><br>Evénements</button>
+                <button class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-shopping-cart"></span><br>Boutique</button>
+                <button class="btn btn-info btn-lg"><span class="glyphicon glyphicon-bullhorn"></span><br>Messages</button>
+            
+			</section>	
+           
+           
+           
+      <section class="col-sm-4">
+          <form class="well">
+            <legend>Si vous voulez me laisser un message</legend>
+            <h4>Comment m'avez-vous trouvé ?</h4>
+            <fieldset>
+              <div class="radio">
+                <label for="ami" class="radio">
+                  <input type="radio" name="origine" value="ami" id="ami">
+                  Par un ami 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="web" class="radio">
+                  <input type="radio" name="origine" value="web" id="web">
+                  Sur le web 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="hasard" class="radio">
+                  <input type="radio" name="origine" value="hasard" id="hasard">
+                  Par hasard 
+                </label>
+              </div>
+              <div class="radio">
+                <label for="autre" class="radio">
+                  <input type="radio" name="origine" value="autre" id="autre">
+                  Autre... 
+                </label>
+              </div>
+              <label for="textarea">Votre message :</label>
+                <textarea id="textarea" class="form-control" rows="4"></textarea>
+                <p class="help-block">Vous pouvez agrandir la fenêtre</p>
+                <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-ok-sign"></span> Envoyer</button>
+            </fieldset>
 
-    </div><!-- /.container -->
+          </form>
+        </section>
+      
+</div>
+
+</div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
